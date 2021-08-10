@@ -1,2 +1,10 @@
-@@include('webp.js')
+    @@include('webp.js');
+@@include('slick.min.js');
+    
+
+
+
+
+
+
 

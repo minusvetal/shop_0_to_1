@@ -10,9 +10,11 @@
 }
 
 @import "nullstyle.scss";
+@import "variable.scss";
 @import "base.scss";
-
 @import "fonts.scss";
 @import "mixins.scss";
+@import "slick.scss";
+
 @import "header.scss";
 @import "footer.scss";

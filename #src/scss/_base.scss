@@ -4,16 +4,20 @@
 body,
 html {
 	font-size: 20px;
+	line-height: 24px;
 	font-weight: 400;
+	color: $dark;
 }
 .container {
+	width: 1210px;
 	padding: 0 20px;
+	margin: 0 auto;
 }
 .icon {
 	width: 20px;
 	height: 20px;
 	fill: #000;
 	&:hover {
-		fill: red;
+		fill: $accent;
 	}
 }
