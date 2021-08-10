@@ -1,0 +1,9 @@
+.header {
+	h1 {
+		@include adaptiv-font(40, 24);
+		@include adaptiv-value("padding", 24, 16, 0);
+	}
+	&__text {
+		@include adaptiv-font(24, 14);
+	}
+}

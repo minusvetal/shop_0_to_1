@@ -1,0 +1,19 @@
+* {
+	font-family: "SFProDisplay", sans-serif;
+}
+body,
+html {
+	font-size: 20px;
+	font-weight: 400;
+}
+.container {
+	padding: 0 20px;
+}
+.icon {
+	width: 20px;
+	height: 20px;
+	fill: #000;
+	&:hover {
+		fill: red;
+	}
+}
