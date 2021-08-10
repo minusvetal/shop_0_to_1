@@ -27,17 +27,3 @@ $maxWidthContainer: 1210; //- ширина контейнера по макет�
 		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
 	}
 }
-
-// @mixin icon($name, $mod) {
-// 	@if ($mod) {
-// 		${`<svg `{class="icon-svg icon-}` + $name " " + $mod>
-//     		<use `${xlink:href="images/svg/symbol/sprite.svg#"}`></use>
-// 		</svg>`}
-// 	}
-// 		@else{
-// 		<svg(class="icon-svg icon-" + $name)>
-// 			<use(xlink:href="img /icons/icons.svg##" + $name)></use>
-//         </svg>
-// 	}
-
-// }
