@@ -9,7 +9,6 @@ html {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 10px;
   box-sizing: border-box;
 }
 
@@ -108,7 +107,7 @@ html {
 }
 
 .container {
-  width: 1210px;
+  max-width: 1210px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -737,4 +736,95 @@ html {
   padding-left: calc(10px + 30 * ((100vw - 320px) / 1600));
   padding-right: calc(10px + 30 * ((100vw - 320px) / 1600));
   margin-left: 3px;
+}
+
+.category .icon-category {
+  width: 6px;
+  height: 9px;
+  fill: #c4c4c4;
+}
+
+.category__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: calc(50px + 30 * ((100vw - 320px) / 1600));
+}
+
+.category__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0 0 32%;
+  padding-right: calc(13px + 7 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(20px + 10 * ((100vw - 320px) / 1600));
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 14px;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.category__item:hover {
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+
+.category__item:hover .category__title {
+  color: #1c62cd;
+}
+
+.category__info {
+  width: 50%;
+}
+
+.category__title {
+  font-family: "Barlow";
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 20px;
+  color: #2f3035;
+  margin-bottom: 50px;
+}
+
+.category__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #c4c4c4;
+}
+
+.category__img {
+  display: block;
+  max-width: 165px;
+  max-height: 105px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: calc(4px + 6 * ((100vw - 320px) / 1600));
+}
+
+.category__img img {
+  width: calc(120px + 45 * ((100vw - 320px) / 1600));
+  height: calc(70px + 70 * ((100vw - 320px) / 1600));
+  max-width: 165px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 1170px) {
+  .category__item {
+    flex: 0 0 32%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .category__item {
+    flex: 0 0 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .category__item {
+    flex: 0 0 100%;
+  }
 }

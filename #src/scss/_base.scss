@@ -9,7 +9,7 @@ html {
 	color: $dark;
 }
 .container {
-	width: 1210px;
+	max-width: 1210px;
 	padding: 0 20px;
 	margin: 0 auto;
 }
@@ -20,4 +20,16 @@ html {
 	&:hover {
 		fill: $accent;
 	}
+}
+
+// media
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1360px) {
+}
+@media (min-width: 1440px) {
 }
