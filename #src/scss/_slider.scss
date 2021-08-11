@@ -1,0 +1,10 @@
+.banner-slider {
+	overflow: hidden;
+	@include adaptiv-value("width", 870, 500, 0);
+	@include adaptiv-value("hight", 400, 250, 0);
+	&__img {
+		@include adaptiv-value("width", 870, 500, 0);
+		@include adaptiv-value("hight", 400, 250, 0);
+		object-fit: contain;
+	}
+}
