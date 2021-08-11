@@ -1,0 +1,80 @@
+.tabs-search {
+	@include adaptiv-value("padding-bottom", 77, 55, 0);
+
+	// .tabs-search__inner
+
+	// .tabs-search__tabs
+
+	&__tabs {
+		@include adaptiv-value("margin-bottom", 25, 12, 0);
+	}
+
+	// .tabs-search__item
+
+	&__item {
+		@include adaptiv-value("padding-bottom", 11, 6, 0);
+		@include adaptiv-value("padding-top", 11, 6, 0);
+		@include adaptiv-value("padding-left", 20, 10, 0);
+		@include adaptiv-value("padding-right", 20, 10, 0);
+		border-radius: 5px;
+		margin-right: 10px;
+		&--active {
+			font-weight: 900;
+			font-size: 20px;
+			line-height: 24px;
+			text-align: center;
+			color: #2f3035;
+			background: $light-gray;
+		}
+		&:hover {
+			color: #2f3035;
+			background: $light-gray;
+		}
+	}
+
+	&__content-item {
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__form {
+		display: flex;
+	}
+	// .tabs-search__input
+
+	&__input {
+		width: 100%;
+		@include adaptiv-value("padding-bottom", 11, 6, 0);
+		@include adaptiv-value("padding-top", 11, 6, 0);
+		@include adaptiv-value("padding-left", 20, 10, 0);
+		@include adaptiv-value("padding-right", 20, 10, 0);
+		background: $light-gray;
+		border-radius: 3px;
+		font-size: 16px;
+		line-height: 19px;
+		&::placeholder {
+			color: #656464;
+		}
+	}
+
+	// .tabs-search__btn
+
+	&__btn {
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		text-align: center;
+		color: $white;
+		background: $accent;
+		border-radius: 3px;
+		@include adaptiv-value("padding-bottom", 16, 6, 0);
+		@include adaptiv-value("padding-top", 16, 6, 0);
+		@include adaptiv-value("padding-left", 40, 10, 0);
+		@include adaptiv-value("padding-right", 40, 10, 0);
+		margin-left: 3px;
+	}
+}
