@@ -468,17 +468,17 @@ html {
 .banner-section__inner {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  height: 400px;
 }
 
 .sale-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 265px;
-  height: 100%;
-  margin-left: calc(20px + 16 * ((100vw - 320px) / 1600));
-  position: relative;
+  text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  margin-left: calc(20px + 16 * ((100vw - 320px) / 1600));
 }
 
 .sale-item span {
@@ -487,25 +487,24 @@ html {
 
 .sale-item__top {
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .sale-item__text {
-  align-items: center;
+  font-family: "ProximaNova";
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1.2px;
   color: #ffffff;
+  background-color: #1c62cd;
   padding-top: calc(5px + 3 * ((100vw - 320px) / 1600));
   padding-bottom: calc(5px + 3 * ((100vw - 320px) / 1600));
   padding-left: calc(10px + 10 * ((100vw - 320px) / 1600));
   padding-right: calc(10px + 10 * ((100vw - 320px) / 1600));
-  background-color: #1c62cd;
 }
 
 .sale-item__price {
-  position: absolute;
   top: 3px;
   right: 0;
   margin-right: 4px;
@@ -513,14 +512,15 @@ html {
 
 .sale-item__price span {
   font-family: "Barlow";
+  text-align: right;
 }
 
 .sale-item__price-new {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 27px;
   line-height: 32px;
   color: #1c62cd;
+  margin-right: 6px;
   padding-bottom: calc(5px + 2 * ((100vw - 320px) / 1600));
 }
 
@@ -531,10 +531,24 @@ html {
 }
 
 .sale-item__price-old {
-  margin-left: 45%;
+  position: relative;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  margin-right: 6px;
   color: #c4c4c4;
+}
+
+.sale-item__price-old:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  bottom: 8px;
+  width: 60px;
+  height: 2px;
+  background-color: #c4c4c4;
+  transform: rotate(343deg);
 }
 
 .sale-item__price-old .icon-rub {
@@ -543,14 +557,20 @@ html {
   fill: #c4c4c4;
 }
 
+.sale-item__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+  max-width: 125px;
+  max-height: 176px;
+}
+
 .sale-item__title {
-  text-align: center;
   margin-bottom: 7px;
 }
 
 .sale-item__footer {
   width: 100%;
-  text-align: center;
   padding-top: calc(15px + 10 * ((100vw - 320px) / 1600));
   padding-bottom: calc(15px + 10 * ((100vw - 320px) / 1600));
   padding-left: calc(10px + 10 * ((100vw - 320px) / 1600));
@@ -570,19 +590,68 @@ html {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  text-align: center;
   color: #1c62cd;
 }
 
 .banner-slider {
+  position: relative;
   overflow: hidden;
   width: calc(500px + 370 * ((100vw - 320px) / 1600));
   hight: calc(250px + 150 * ((100vw - 320px) / 1600));
 }
 
 .banner-slider__img {
-  width: calc(500px + 370 * ((100vw - 320px) / 1600));
-  hight: calc(250px + 150 * ((100vw - 320px) / 1600));
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.banner-slider__btn {
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 6;
+  cursor: pointer;
+}
+
+.banner-slider__btnprev {
+  left: 20px;
+}
+
+.banner-slider__btnnext {
+  right: 20px;
+}
+
+.banner-slider .icon-arrow {
+  width: 15px;
+  height: 28px;
+  fill: #ffffff;
+}
+
+.banner-slider .slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.banner-slider .slick-dots li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.banner-slider .slick-dots button {
+  padding: 0;
+  font-size: 0;
+  margin: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.banner-slider .slick-active button {
+  background-color: #ffffff;
 }

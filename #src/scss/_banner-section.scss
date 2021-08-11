@@ -4,54 +4,52 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-start;
-		height: 400px;
 	}
 }
 .sale-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	max-width: 265px;
-	height: 100%;
+	text-align: center;
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	@include adaptiv-value("margin-left", 36, 20, 0);
 	span {
 		display: block;
 	}
-	@include adaptiv-value("margin-left", 36, 20, 0);
-	position: relative;
-	border: 1px solid #cdcdcd;
-	border-radius: 3px;
 	&__top {
 		display: flex;
-		flex-wrap: wrap;
-		position: relative;
+		justify-content: space-between;
+		align-items: flex-start;
 	}
 	&__text {
-		align-items: center;
-		// max-height: 30px;
+		font-family: "ProximaNova";
 		text-transform: uppercase;
 		font-size: 12px;
 		letter-spacing: 1.2px;
 		color: $white;
+		background-color: $accent;
 		@include adaptiv-value("padding-top", 8, 5, 0);
 		@include adaptiv-value("padding-bottom", 8, 5, 0);
 		@include adaptiv-value("padding-left", 20, 10, 0);
 		@include adaptiv-value("padding-right", 20, 10, 0);
-		background-color: $accent;
 	}
 	&__price {
-		position: absolute;
 		top: 3px;
 		right: 0;
+		margin-right: 4px;
 		span {
 			font-family: "Barlow";
+			text-align: right;
 		}
-		margin-right: 4px;
 		&-new {
-			font-style: normal;
-			font-weight: bold;
+			font-weight: 700;
 			font-size: 27px;
 			line-height: 32px;
-			color: #1c62cd;
+			color: $accent;
+			margin-right: 6px;
 			@include adaptiv-value("padding-bottom", 7, 5, 0);
-
 			.icon-rub {
 				width: 15px;
 				height: 18px;
@@ -59,11 +57,23 @@
 			}
 		}
 		&-old {
-			margin-left: 45%;
-
+			position: relative;
+			font-weight: 400;
 			font-size: 14px;
 			line-height: 17px;
+			margin-right: 6px;
 			color: #c4c4c4;
+			&:after {
+				content: "";
+				position: absolute;
+				display: inline-block;
+				right: 0;
+				bottom: 8px;
+				width: 60px;
+				height: 2px;
+				background-color: #c4c4c4;
+				transform: rotate(343deg);
+			}
 			.icon-rub {
 				width: 8px;
 				height: 9px;
@@ -71,14 +81,19 @@
 			}
 		}
 	}
+	&__img {
+		object-fit: contain;
+		margin: 0 auto;
+		max-width: 125px;
+		max-height: 176px;
+	}
 	&__title {
-		text-align: center;
 		margin-bottom: 7px;
 	}
 
 	&__footer {
 		width: 100%;
-		text-align: center;
+
 		@include adaptiv-value("padding-top", 25, 15, 0);
 		@include adaptiv-value("padding-bottom", 25, 15, 0);
 		@include adaptiv-value("padding-left", 20, 10, 0);
@@ -96,7 +111,7 @@
 			font-weight: bold;
 			font-size: 18px;
 			line-height: 22px;
-			text-align: center;
+
 			color: $accent;
 		}
 	}
