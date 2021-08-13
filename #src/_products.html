@@ -1,15 +1,43 @@
 <section class="products">
-    <div class="container">
-        <div class="product__inner">
-            <div class="tabs-wrapper">
-                <div class="tabs">
-                    <a class="tab tab--active" href="#"></a>
-                </div>
-                <div class="tabs-container">
-                    <div class="tabs-content"></div>
-                </div>
-                <!-- end tab -->
-            </div>
+  <div class="container">
+    <div class="product__inner">
+      <div class="tabs-wrapper">
+        <div class="tabs product__tabs">
+          <a class="tab tab--active product__tabs-tab" href="#">запчасти</a>
+          <a class="tab tab--active product__tabs-tab" href="#">моторы</a>
+          <a class="tab tab--active product__tabs-tab" href="#">шины</a>
+          <a class="tab tab--active product__tabs-tab" href="#">электроника</a>
+          <a class="tab tab--active product__tabs-tab" href="#">инструменты</a>
+          <a class="tab tab--active product__tabs-tab" href="#">аксессуары</a>
         </div>
+
+        <!-- /. tabs -->
+
+        <div class="product__container tabs-container ">
+          <div class="product__content tabs-content tabs-content--active ">
+            <div class="product-slider">
+              <div class="product-slider__item">
+                <a class="product-item" href="#">
+                  <button class="product-item__favorite"></button>
+                  <img class="product-item__img" src="img/products/accessories/02.png" alt="фото товара">
+                  <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
+                  <span class="product-item__price">9800
+                    <svg class="icon icon__product--rub">
+                      <use href="img/icons/icons.svg#rub"></use>
+                    </svg>
+                  </span>
+                  <button class="product-item__basket">
+                    <svg class="icon icon__product--basket">
+                      <use href="img/icons/icons.svg#basket"></use>
+                    </svg>
+                  </button>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>

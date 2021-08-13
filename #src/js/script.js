@@ -2,6 +2,7 @@
 @@include('webp.js')
 @@include('slick.min.js')
 
+
 $(document).ready(function(){
   $('.banner-slider__wrapper').slick({
     dots: true,
@@ -18,6 +19,12 @@ $('.tab').on('click', function (e) {
 
   $(this).addClass('tab--active');
   $($(this).attr('href')).addClass('tabs-content--active');
+})
+
+$('.product-item__favorite').on('click', function (e) {
+  e.preventDefault();
+  $('.product-item__favorite').toggleClass('product-item__favorite--active')
+  
 })
 
 

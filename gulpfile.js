@@ -71,11 +71,7 @@ function html() {
 
 function css() {
 	return src(path.src.css)
-		.pipe(
-			scss({
-				outputStyle: "expanded",
-			}),
-		)
+		.pipe(scss({ outputStyle: "expanded" }).on("error", scss.logError))
 		.pipe(group_media())
 		.pipe(
 			autoprefixer({
@@ -83,7 +79,7 @@ function css() {
 				cascade: true,
 			}),
 		)
-		.pipe(webpCSS())
+		.pipe(webpCSS({ webpClass: ".webp", noWebpClass: ".no-webp" }))
 		.pipe(dest(path.build.css))
 		.pipe(clean_css())
 		.pipe(
