@@ -109,6 +109,12 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		transition: all 0.5s;
+		@include adaptiv-font(20, 16);
+		line-height: 24px;
+		text-transform: capitalize;
+
+		color: #2f3035;
+
 		@include adaptiv-value("padding-top", 12, 2, 0);
 		@include adaptiv-value("padding-bottom", 12, 2, 0);
 		&::before {

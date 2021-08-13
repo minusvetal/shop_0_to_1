@@ -29,12 +29,14 @@ $(document).ready(function(){
   });
 });
 
-$('.tabs-search__item').on('click', function (e) {
+$('.tab').on('click', function (e) {
   e.preventDefault();
-  $('.tabs-search__item').removeClass('tabs-search__item--active');
-  $('.tabs-search__content-item').removeClass('tabs-search__content-item--active');
-  $(this).addClass('tabs-search__item--active');
-  $($(this).attr('href')).addClass('tabs-search__content-item--active');
+
+  $('.tab').removeClass('tab--active');
+  $('.tabs-content').removeClass('tabs-content--active');
+
+  $(this).addClass('tab--active');
+  $($(this).attr('href')).addClass('tabs-content--active');
 })
 
 
