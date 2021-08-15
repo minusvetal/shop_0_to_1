@@ -10,6 +10,12 @@ $(document).ready(function(){
     nextArrow: '<button class="banner-slider__btn banner-slider__btnnext"><svg class="icon icon-arrow"><use href="img/icons/icons.svg#arrow-right"></use></svg></button>',
   });
 });
+$(document).ready(function(){
+  $('.products-slider').slick({
+    arrows: false,
+
+  });
+});
 
 $('.tab').on('click', function (e) {
   e.preventDefault();
@@ -21,11 +27,22 @@ $('.tab').on('click', function (e) {
   $($(this).attr('href')).addClass('tabs-content--active');
 })
 
-$('.product-item__favorite').on('click', function (e) {
+$('.product-tab').on('click', function (e) {
   e.preventDefault();
-  $('.product-item__favorite').toggleClass('product-item__favorite--active')
+
+  $('.product-tab').removeClass('product-tab--active');
+  $('.product-content').removeClass('product-content--active');
+
+  $(this).addClass('product-tab--active');
+  $($(this).attr('href')).addClass('product-content--active');
+})
+$('.products-item__favorite').on('click', function (e) {
+  e.preventDefault();
+  $('.products-item__favorite').toggleClass('products-item__favorite--active')
   
 })
+
+
 
 
 

@@ -22,6 +22,14 @@ html {
 	}
 }
 
+.tabs-content {
+	display: none;
+}
+
+.tabs-content--active {
+	display: block;
+}
+
 // media
 @media (min-width: 768px) {
 }

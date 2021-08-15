@@ -11,16 +11,17 @@
 		@include adaptiv-value("padding-right", 20, 10, 0);
 		border-radius: 5px;
 		margin-right: 10px;
+		color: $dark;
 		&.tab--active {
 			font-weight: 900;
 			font-size: 20px;
 			line-height: 24px;
 			text-align: center;
-			color: #2f3035;
+			color: $dark;
 			background: $light-gray;
 		}
 		&:hover {
-			color: #2f3035;
+			color: $dark;
 			background: $light-gray;
 		}
 	}
