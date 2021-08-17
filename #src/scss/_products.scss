@@ -14,7 +14,7 @@
 		margin-right: 50px;
 		padding-bottom: 12px;
 	}
-	.product-tab--active {
+	.tab--active {
 		border-bottom: 2px solid #1c62cd;
 	}
 	.product-content {
@@ -119,6 +119,8 @@
 		text-transform: uppercase;
 	}
 	&__title {
+		margin: 0 auto;
+		max-width: 200px;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 18px;
@@ -126,12 +128,13 @@
 		color: $dark;
 		text-overflow: clip;
 		@include adaptiv-value("padding-top", 20, 16, 0);
-		@include adaptiv-value("padding-bottom", 20, 26, 0);
+		@include adaptiv-value("padding-bottom", 4, 2, 0);
 	}
 	&__img {
 		max-width: 200px;
-		max-height: 200px;
+		min-height: 200px;
 		margin: 0 auto;
+		object-fit: contain;
 	}
 	&__hover-text {
 		position: absolute;
@@ -156,6 +159,7 @@
 		font-size: 30px;
 		line-height: 36px;
 		color: $dark;
+		align-items: flex-end;
 	}
 
 	&__favorite {
@@ -213,9 +217,8 @@
 		max-width: 190px;
 		font-size: 16px;
 		line-height: 19px;
-		// margin: 0 auto;
 		color: $accent;
-
+		background-color: transparent;
 		border-bottom: 1px solid $accent;
 	}
 }
