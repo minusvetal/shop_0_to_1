@@ -30,6 +30,21 @@ html {
 	display: block;
 }
 
+.btn {
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	background: #1c62cd;
+	border-radius: 3px;
+	padding-bottom: calc(6px + 10 * ((100vw - 320px) / 1600));
+	padding-top: calc(6px + 10 * ((100vw - 320px) / 1600));
+	padding-left: calc(10px + 30 * ((100vw - 320px) / 1600));
+	padding-right: calc(10px + 30 * ((100vw - 320px) / 1600));
+}
+
 // media
 @media (min-width: 768px) {
 }
