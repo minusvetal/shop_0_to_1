@@ -36,17 +36,20 @@
 		margin-right: 10px;
 	}
 	&__right-btn {
+		width: 25px;
+		height: 25px;
+		margin-left: 10px;
 		background-color: transparent;
 	}
 	&__right {
 		display: flex;
 		align-items: center;
 	}
-	&__right-select {
-		margin-right: 14px;
-		padding: 8px 20px;
-		border: 1.5px solid #d7d9df;
-	}
+	// &__right-select {
+	// 	margin-right: 14px;
+	// 	padding: 8px 20px;
+	// 	border: 1.5px solid #d7d9df;
+	// }
 }
 
 .catalog-bottom {
@@ -57,7 +60,6 @@
 .icon-gallery {
 	width: 25px;
 	height: 25px;
-	margin-left: 10px;
 	rect {
 		stroke: $dark;
 	}
@@ -90,4 +92,39 @@
 			display: block;
 		}
 	}
+}
+
+// select
+.jq-selectbox__select {
+	width: 250px;
+	height: 34px;
+	margin-right: 14px;
+	padding: 8px 20px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #2f3035;
+	background: transparent;
+	box-shadow: none;
+	text-shadow: none;
+	border: 1.5px solid #d7d9df;
+	border-radius: 0;
+}
+
+.jq-selectbox__trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+}
+
+.jq-selectbox__trigger-arrow {
+	position: absolute;
+	top: 14px;
+	right: 12px;
+	width: 12px;
+	height: 10px;
+	background: url("../img/arrow-down.svg");
+	background-repeat: no-repeat;
+	border: none;
 }

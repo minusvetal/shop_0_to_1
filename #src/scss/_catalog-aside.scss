@@ -4,3 +4,23 @@
 		margin-right: 10px;
 	}
 }
+.aside-filter {
+	&__tabs {
+		margin-bottom: 40px;
+	}
+	&__tab {
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+		color: #c4c4c4;
+		padding-bottom: 7px;
+		margin-right: 40px;
+	}
+	.tab--active {
+		font-weight: 900;
+		color: #2f3035;
+		border-bottom: 2px solid #1c62cd;
+	}
+}

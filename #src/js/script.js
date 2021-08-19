@@ -1,6 +1,8 @@
 // @ts-nocheck
 @@include('webp.js')
 @@include('slick.min.js')
+@@include('jquery.formstyler.min.js')
+@@include('ion.rangeSlider.min.js')
 
 
 $(document).ready(function(){
@@ -31,16 +33,20 @@ $('.tab').on('click', function (e) {
   $($(this).attr('href')).addClass('tabs-content--active');
 })
 
-
-
-
-
-
 $('.products-item__favorite').on('click', function (e) {
   e.preventDefault();
   $(this).toggleClass('products-item__favorite--active')
   
 })
+
+
+// jquery.formstyler.min.js
+$(function() {
+
+	$('input, select').styler();
+
+});
+
 
 
 
