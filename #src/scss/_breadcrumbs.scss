@@ -1,0 +1,31 @@
+.breadcrumbs-container {
+	@include adaptiv-value("margin-bottom", 41, 58, 0);
+}
+
+.breadcrumbs {
+	&__list-item {
+		display: inline-block;
+		position: relative;
+		font-size: 15px;
+		line-height: 18px;
+		padding-right: 16px;
+		margin-right: 10px;
+		color: #c4c4c4;
+		&::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 33%;
+			background-image: url("../img/icons/icons.svg#arrow-right");
+			background-repeat: no-repeat;
+			width: 8px;
+			height: 10px;
+		}
+		&:last-child:before {
+			display: none;
+		}
+	}
+	&__list-link {
+		color: #c4c4c4;
+	}
+}

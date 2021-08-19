@@ -1,5 +1,4 @@
 .banner-section {
-	@include adaptiv-value("padding-top", 77, 55, 0);
 	@include adaptiv-value("padding-bottom", 77, 55, 0);
 	&__inner {
 		display: flex;

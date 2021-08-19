@@ -414,6 +414,10 @@ html {
   text-align: center;
 }
 
+.menu__link {
+  color: #2f3035;
+}
+
 .menu__item + .menu__item {
   padding-left: calc(25px + 25 * ((100vw - 320px) / 1600));
 }
@@ -425,6 +429,7 @@ html {
 .heared-bottom {
   min-height: 53px;
   background: #f0f0f4;
+  margin-bottom: calc(55px + 22 * ((100vw - 320px) / 1600));
 }
 
 .menu-categories {
@@ -488,7 +493,6 @@ html {
 }
 
 .banner-section {
-  padding-top: calc(55px + 22 * ((100vw - 320px) / 1600));
   padding-bottom: calc(55px + 22 * ((100vw - 320px) / 1600));
 }
 
@@ -1116,6 +1120,39 @@ html {
 .banner__img {
   width: 100%;
   max-height: 165px;
+}
+
+.breadcrumbs-container {
+  margin-bottom: calc(58px + -17 * ((100vw - 320px) / 1600));
+}
+
+.breadcrumbs__list-item {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  padding-right: 16px;
+  margin-right: 10px;
+  color: #c4c4c4;
+}
+
+.breadcrumbs__list-item::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 33%;
+  background-image: url("../img/icons/icons.svg#arrow-right");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 10px;
+}
+
+.breadcrumbs__list-item:last-child:before {
+  display: none;
+}
+
+.breadcrumbs__list-link {
+  color: #c4c4c4;
 }
 
 .footer {

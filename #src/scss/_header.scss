@@ -77,7 +77,9 @@
 		line-height: 24px;
 		text-align: center;
 	}
-
+	&__link {
+		color: $dark;
+	}
 	// .menu__item
 
 	&__item + .menu__item {
@@ -92,6 +94,7 @@
 .heared-bottom {
 	min-height: 53px;
 	background: $light-gray;
+	@include adaptiv-value("margin-bottom", 77, 55, 0);
 }
 .menu-categories {
 	display: flex;
@@ -112,8 +115,7 @@
 		@include adaptiv-font(20, 16);
 		line-height: 24px;
 		text-transform: capitalize;
-
-		color: #2f3035;
+		color: $dark;
 
 		@include adaptiv-value("padding-top", 12, 2, 0);
 		@include adaptiv-value("padding-bottom", 12, 2, 0);
