@@ -64,9 +64,14 @@ $('.products-item__favorite').on('click', function (e) {
 // jquery.formstyler.min.js
 $(function() {
 
-	$('input, select').styler();
+	$('.filter-style').styler();
 
 });
+
+$(".aside-filter__drop").on("click", function () {
+  $(this).toggleClass("aside-filter__drop-active");
+  $(this).next().slideToggle(200);
+})
 
 
 

@@ -109,6 +109,18 @@
 	border: 1.5px solid #d7d9df;
 	border-radius: 0;
 }
+.jq-selectbox__select:hover {
+	background: rgba(28, 98, 205, 1);
+	color: $white;
+}
+.jq-selectbox li:hover {
+	background-color: rgba(28, 98, 205, 1);
+	color: $white;
+}
+.jq-selectbox li.selected {
+	background-color: rgba(28, 98, 205, 0.5);
+	color: $white;
+}
 
 .jq-selectbox__trigger {
 	position: absolute;

@@ -2631,6 +2631,52 @@ input[type=submit].styler[disabled] {
   border-bottom: 2px solid #1c62cd;
 }
 
+.aside-filter__item-drop {
+  margin: 40px 0;
+}
+
+.aside-filter__item-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2f3035;
+  padding-left: 26px;
+}
+
+.aside-filter__drop {
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.aside-filter__drop:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/icons/icons.svg#arrow-top);
+}
+
+.aside-filter__drop-active:before {
+  transform: rotate(180deg);
+}
+
+.aside-filter__content {
+  display: flex;
+}
+
+.aside-filter__content-box {
+  flex: 0 0 50%;
+}
+
+.aside-filter__content-label {
+  font-size: 14px;
+  line-height: 17px;
+  color: #2f3035;
+}
+
 .catalog {
   margin-bottom: 100px;
 }
@@ -2744,6 +2790,21 @@ input[type=submit].styler[disabled] {
   text-shadow: none;
   border: 1.5px solid #d7d9df;
   border-radius: 0;
+}
+
+.jq-selectbox__select:hover {
+  background: #1c62cd;
+  color: #ffffff;
+}
+
+.jq-selectbox li:hover {
+  background-color: #1c62cd;
+  color: #ffffff;
+}
+
+.jq-selectbox li.selected {
+  background-color: rgba(28, 98, 205, 0.5);
+  color: #ffffff;
 }
 
 .jq-selectbox__trigger {

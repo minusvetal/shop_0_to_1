@@ -20,7 +20,47 @@
 	}
 	.tab--active {
 		font-weight: 900;
-		color: #2f3035;
+		color: $dark;
 		border-bottom: 2px solid #1c62cd;
+	}
+	&__item-drop {
+		margin: 40px 0;
+	}
+	&__item-title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+		color: $dark;
+		padding-left: 26px;
+	}
+	&__drop {
+		position: relative;
+		margin-bottom: 20px;
+		cursor: pointer;
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 4px;
+			width: 12px;
+			height: 12px;
+			background-image: url(../img/icons/icons.svg#arrow-top);
+		}
+		&-active {
+			&:before {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	&__content {
+		display: flex;
+	}
+	&__content-box {
+		flex: 0 0 50%;
+	}
+	&__content-label {
+		font-size: 14px;
+		line-height: 17px;
+		color: $dark;
 	}
 }
