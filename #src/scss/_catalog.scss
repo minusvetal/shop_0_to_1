@@ -1,0 +1,93 @@
+@import "catalog-aside.scss";
+.catalog {
+	margin-bottom: 100px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.products-item__wrapper {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.catalog-top {
+	&__title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 36px;
+		color: $dark;
+		margin-bottom: 30px;
+	}
+	&__filters {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 47px;
+	}
+	&__left-btn {
+		padding: 4px 22px;
+		font-size: 14px;
+		line-height: 17px;
+		color: $dark;
+		opacity: 0.7;
+		background: $light-gray;
+		border-radius: 3px;
+		margin-right: 10px;
+	}
+	&__right-btn {
+		background-color: transparent;
+	}
+	&__right {
+		display: flex;
+		align-items: center;
+	}
+	&__right-select {
+		margin-right: 14px;
+		padding: 8px 20px;
+		border: 1.5px solid #d7d9df;
+	}
+}
+
+.catalog-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon-gallery {
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	rect {
+		stroke: $dark;
+	}
+}
+
+.pagination {
+	margin-top: 30px;
+	width: 100%;
+}
+.pagination-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__item {
+		margin: 0 6px;
+		border: 2px solid transparent;
+	}
+	&__item-active {
+		border: 2px solid $accent;
+		color: $accent;
+	}
+	&__link {
+		display: block;
+		padding: 4px 12px;
+		font-family: "Barlow";
+		font-size: 18px;
+		line-height: 22px;
+		color: inherit;
+		&--dots {
+			display: block;
+		}
+	}
+}
