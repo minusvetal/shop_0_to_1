@@ -52,6 +52,16 @@ $(".aside-filter__drop").on("click", function () {
   $(this).next().slideToggle(200);
 })
 
+// range-slider
+
+    $(".js-range-slider").ionRangeSlider({
+      type: "double",
+      min: 50000,
+      max: 1500000,
+    });
+    
+
+
 
 
 
