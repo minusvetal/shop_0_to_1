@@ -54,14 +54,62 @@ $(".aside-filter__drop").on("click", function () {
 
 // range-slider
 
-    $(".js-range-slider").ionRangeSlider({
-      type: "double",
-      min: 50000,
-      max: 1500000,
-    });
+var $range = $(".js-range-slider"),
+    $inputFrom = $(".js-input-from"),
+    $inputTo = $(".js-input-to"),
+    instance,
+    min = 50000,
+    max = 1500000,
+    from = 200000,
+    to = 500000;
+
+$range.ionRangeSlider({
+    type: "double",
+    min: min,
+    max: max,
+
+    onStart: updateInputs,
+    onChange: updateInputs
+});
+instance = $range.data("ionRangeSlider");
+
+function updateInputs (data) {
+	from = data.from;
+    to = data.to;
     
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);	
+}
 
+$inputFrom.on("input", function () {
+    var val = $(this).prop("value");
+    
+    // validate
+    if (val < min) {
+        val = min;
+    } else if (val > to) {
+        val = to;
+    }
+    
+    instance.update({
+        from: val
+    });
+});
 
+$inputTo.on("input", function () {
+    var val = $(this).prop("value");
+    
+    // validate
+    if (val < from) {
+        val = from;
+    } else if (val > max) {
+        val = max;
+    }
+    
+    instance.update({
+        to: val
+    });
+});
 
 
 

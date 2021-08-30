@@ -141,3 +141,28 @@
 	background-repeat: no-repeat;
 	border: none;
 }
+
+// range-slider
+
+.range-slider {
+	width: 95%;
+}
+.js-input-from,
+.js-input-to {
+	text-decoration: underline;
+}
+.extra-controls {
+	display: flex;
+	justify-content: space-between;
+	font-family: "Barlow";
+	font-size: 14px;
+	line-height: 17px;
+	color: #2f3035;
+	&__text {
+		display: inline-block;
+		font-size: 14px;
+		line-height: 17px;
+		color: #c4c4c4;
+		margin-right: 10px;
+	}
+}
