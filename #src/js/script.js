@@ -1,8 +1,9 @@
 // @ts-nocheck
-@include('webp.js')
-@include('slick.min.js')
-@include('jquery.formstyler.min.js')
-@include('ion.rangeSlider.min.js')
+@@include('webp.js')
+@@include('slick.min.js')
+@@include('jquery.formstyler.min.js')
+@@include('ion.rangeSlider.min.js')
+
 
 
 $(document).ready(function(){
@@ -38,6 +39,22 @@ $('.products-item__favorite').on('click', function (e) {
   $(this).toggleClass('products-item__favorite--active')
   
 })
+
+
+$(".catalog-top__btn-grid").on("click", function (e) {
+  e.preventDefault();
+  $(".catalog-top__btn-line").removeClass('catalog-top__btn--active');
+  $(".catalog-top__btn-grid").addClass('catalog-top__btn--active');
+    $('.products-item__wrapper').removeClass('products-item__wrapper--list');
+});
+
+
+$(".catalog-top__btn-line").on("click", function (e) {
+  e.preventDefault();
+  $(".catalog-top__btn-grid").removeClass('catalog-top__btn--active');
+  $(".catalog-top__btn-line").addClass('catalog-top__btn--active');
+  $('.products-item__wrapper').addClass('products-item__wrapper--list');
+});
 
 
 // jquery.formstyler.min.js
@@ -110,6 +127,9 @@ $inputTo.on("input", function () {
         to: val
     });
 });
+
+
+
 
 
 

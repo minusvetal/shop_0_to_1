@@ -105,6 +105,9 @@
 			}
 		}
 	}
+	&__wrapper--list {
+		width: 100%;
+	}
 	&__sale::before {
 		content: "Sale";
 		position: absolute;

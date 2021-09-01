@@ -12,13 +12,16 @@
 }
 
 .catalog-top {
+	&__right {
+		display: flex;
+		align-items: center;
+	}
 	&__title {
 		font-weight: 700;
 		font-size: 30px;
 		line-height: 36px;
 		color: $dark;
 		margin-bottom: 30px;
-		// margin-bottom: 30px;
 	}
 	&__filters {
 		display: flex;
@@ -35,16 +38,24 @@
 		background: $light-gray;
 		border-radius: 3px;
 		margin-right: 10px;
+		&:hover {
+			background-color: $accent;
+			color: $white;
+		}
 	}
-	&__right-btn {
+	&__btn-grid,
+	&__btn-line {
 		width: 25px;
 		height: 25px;
-		margin-left: 10px;
+		margin-left: 12px;
 		background-color: transparent;
+		opacity: 0.3;
 	}
-	&__right {
-		display: flex;
-		align-items: center;
+	&__btn--active {
+		opacity: 1;
+		.products-item__wrapper {
+			width: 100%;
+		}
 	}
 }
 
@@ -56,9 +67,6 @@
 .icon-gallery {
 	width: 25px;
 	height: 25px;
-	rect {
-		stroke: $dark;
-	}
 }
 
 .pagination {
@@ -94,7 +102,6 @@
 .jq-selectbox__select {
 	width: 250px;
 	height: 34px;
-	margin-right: 14px;
 	padding: 8px 20px;
 	font-size: 14px;
 	line-height: 17px;

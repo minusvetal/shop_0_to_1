@@ -29,6 +29,7 @@
                 еще
               </button>
             </div>
+            <!-- catalog-top__left end -->
             <div class="catalog-top__right">
               <select class="catalog-top__right-select filter-style">
                 <option value="books">По полулярности</option>
@@ -37,32 +38,33 @@
                 <option value="php">PHP</option>
                 <option value="js">JavaScript</option>
               </select>
-              <button class="catalog-top__right-btn">
-                <svg class="icon-gallery" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="23" height="21" fill="#E5E5E5" />
-                  <g clip-path="url(#clip0)">
-                    <rect width="1920" height="2554" transform="translate(-1486 -343)" fill="white" />
-                    <rect x="1" y="1" width="21" height="19" stroke="#C4C4C4" stroke-width="2" />
-                    <rect x="7" y="6" width="2" height="2" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" />
-                    <rect x="7" y="13" width="2" height="2" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" />
-                    <rect x="14" y="6" width="2" height="2" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" />
-                    <rect x="14" y="13" width="2" height="2" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="2" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0">
-                      <rect width="1920" height="2554" fill="white" transform="translate(-1486 -343)" />
-                    </clipPath>
-                  </defs>
+              <button class="catalog-top__btn-grid catalog-top__btn catalog-top__btn--active">
+                <svg class="icon-gallery" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2" />
+                  <rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
+                  <rect x="7" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
+                  <rect x="14" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
+                  <rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
                 </svg>
-              </button>
-              <button class="catalog-top__right-btn">
-                <svg class="icon-gallery">
-                  <use href="img/icons/icons.svg#gallery-line"></use>
-                </svg>
-              </button>
 
+              </button>
+              <button class="catalog-top__btn-line catalog-top__btn">
+                <svg class="icon-gallery" width="25" height="19" viewBox="0 0 25 19" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+
+                  <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035" />
+                  <rect x="6" y="8" width="19" height="3" rx="1.5" fill="#2F3035" />
+                  <rect x="6" y="16" width="19" height="3" rx="1.5" fill="#2F3035" />
+                  <rect width="3" height="3" rx="1.5" fill="#2F3035" />
+                  <rect y="8" width="3" height="3" rx="1.5" fill="#2F3035" />
+                  <rect y="16" width="3" height="3" rx="1.5" fill="#2F3035" />
+
+                </svg>
+
+              </button>
             </div>
-
+            <!-- catalog-top__right -->
           </div>
 
 
@@ -78,12 +80,10 @@
                 <a class="tab aside-filter__tab " href="#pr-tab-2">по марке</a>
               </div>
               <!-- /. tabs -->
-
               <div class="tabs-container">
                 <!-- content-01 -->
                 <div class="aside-filter__tabs-content tabs-content tabs-content--active " id="pr-tab-1">
                   <form class="aside-filter__form" action="#">
-
 
                     <ul class="aside-filter__list">
                       <li class="aside-filter__item-drop">
@@ -92,7 +92,7 @@
                         <div class="aside-filter__content">
                           <div class="aside-filter__content-box">
                             <label class='aside-filter__content-label'>
-                              <input class="filter-style" type="checkbox">
+                              <input class="filter-style" type="checkbox" checked>
                               В наличие
 
                             </label>
@@ -120,20 +120,19 @@
                           </div>
                           <div class="aside-filter__content-box">
                             <label class='aside-filter__content-label'>
-                              <input class="filter-style" name="new" type="radio">
+                              <input class="filter-style" name="new" type="radio" checked>
                               Новинки
                             </label>
                           </div>
                           <div class="aside-filter__content-box">
                             <label class='aside-filter__content-label'>
-                              <input class="filter-style" name="new" type="radio">
+                              <input class="filter-style" name="new" type="radio" checked>
                               Акции
                             </label>
                           </div>
                         </div>
                       </li>
                       <!-- /.aside-filter__item -->
-
 
                       <!-- range-slider start -->
                       <li class="aside-filter__item-drop">
@@ -197,15 +196,13 @@
                       </li>
                       <!-- /.aside-filter__item -->
 
-
-
                       <li class="aside-filter__item-drop ">
                         <p class="aside-filter__item-title aside-filter__drop aside-filter__drop-active ">Бренд</p>
 
                         <div class="aside-filter__content">
                           <div class="aside-filter__content-box">
                             <label class='aside-filter__content-label'>
-                              <input class="filter-style" type="checkbox">
+                              <input class="filter-style" type="checkbox" checked>
                               BRP
 
                             </label>
@@ -230,8 +227,6 @@
 
                       </li>
                       <!-- /.aside-filter__item -->
-
-
 
                       <li class="aside-filter__item-drop">
                         <p class="aside-filter__item-title aside-filter__drop aside-filter__drop-active ">Модель</p>
@@ -398,7 +393,6 @@
 
               </div>
             </div>
-
           </aside>
           <!-- catalog-left aside-->
 

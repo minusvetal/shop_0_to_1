@@ -2451,6 +2451,10 @@ input[type=submit].styler[disabled] {
   fill: #1c62cd;
 }
 
+.products-item__wrapper--list {
+  width: 100%;
+}
+
 .products-item__sale::before {
   content: "Sale";
   position: absolute;
@@ -2964,6 +2968,11 @@ input[type=submit].styler[disabled] {
   margin-bottom: 30px;
 }
 
+.catalog-top__right {
+  display: flex;
+  align-items: center;
+}
+
 .catalog-top__title {
   font-weight: 700;
   font-size: 30px;
@@ -2990,16 +2999,26 @@ input[type=submit].styler[disabled] {
   margin-right: 10px;
 }
 
-.catalog-top__right-btn {
-  width: 25px;
-  height: 25px;
-  margin-left: 10px;
-  background-color: transparent;
+.catalog-top__left-btn:hover {
+  background-color: #1c62cd;
+  color: #ffffff;
 }
 
-.catalog-top__right {
-  display: flex;
-  align-items: center;
+.catalog-top__btn-grid,
+.catalog-top__btn-line {
+  width: 25px;
+  height: 25px;
+  margin-left: 12px;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.catalog-top__btn--active {
+  opacity: 1;
+}
+
+.catalog-top__btn--active .products-item__wrapper {
+  width: 100%;
 }
 
 .catalog-bottom {
@@ -3010,10 +3029,6 @@ input[type=submit].styler[disabled] {
 .icon-gallery {
   width: 25px;
   height: 25px;
-}
-
-.icon-gallery rect {
-  stroke: #2f3035;
 }
 
 .pagination {
@@ -3053,7 +3068,6 @@ input[type=submit].styler[disabled] {
 .jq-selectbox__select {
   width: 250px;
   height: 34px;
-  margin-right: 14px;
   padding: 8px 20px;
   font-size: 14px;
   line-height: 17px;
