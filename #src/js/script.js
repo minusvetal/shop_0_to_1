@@ -1,8 +1,8 @@
 // @ts-nocheck
-@@include('webp.js')
-@@include('slick.min.js')
-@@include('jquery.formstyler.min.js')
-@@include('ion.rangeSlider.min.js')
+@include('webp.js')
+@include('slick.min.js')
+@include('jquery.formstyler.min.js')
+@include('ion.rangeSlider.min.js')
 
 
 $(document).ready(function(){
@@ -47,7 +47,7 @@ $(function() {
 
 });
 
-$(".aside-filter__drop").on("click", function () {
+$(".aside-filter__drop, .filter__extra").on("click", function () {
   $(this).toggleClass("aside-filter__drop-active");
   $(this).next().slideToggle(200);
 })

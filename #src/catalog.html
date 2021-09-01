@@ -71,7 +71,7 @@
 
         <div class="catalog-bottom">
 
-          <aside class="catalog__aside aside-filter">
+          <aside class="catalog__aside aside-filter ">
             <div class="tabs-wrapper">
               <div class="tabs aside-filter__tabs">
                 <a class="tab aside-filter__tab tab--active" href="#pr-tab-1">Параметры</a>
@@ -225,8 +225,8 @@
                             </label>
                           </div>
 
+                          <a class="aside-filter__link" href="#">Показать еще</a>
                         </div>
-                        <a class="aside-filter__link" href="#">Показать еще</a>
 
                       </li>
                       <!-- /.aside-filter__item -->
@@ -267,29 +267,29 @@
                             </label>
                           </div>
 
+                          <a class="aside-filter__link" href="#">Показать еще</a>
                         </div>
-                        <a class="aside-filter__link" href="#">Показать еще</a>
 
                       </li>
                       <!-- /.aside-filter__item -->
-                      <li class="aside-filter__item-drop">
+
+                      <li class="aside-filter__item-drop btn-checked">
                         <p class="aside-filter__item-title aside-filter__drop aside-filter__drop-active ">Акции</p>
                         <div class="aside-filter__content">
 
                           <div class="aside-filter__content-box">
                             <label class='aside-filter__content-label'>
                               <input class="filter-style" type="checkbox" checked>
-                              <span class="aside-filter__content-text">
+                              <span class="btn-checked__text">
                                 SALE
                               </span>
-
                             </label>
                           </div>
 
                           <div class="aside-filter__content-box">
                             <label class='aside-filter__content-label'>
                               <input class="filter-style" type="checkbox" checked>
-                              <span class="aside-filter__content-text">
+                              <span class="btn-checked__text">
                                 NEW
                               </span>
                             </label>
@@ -298,30 +298,25 @@
                           <div class="aside-filter__content-box">
                             <label class='aside-filter__content-label'>
                               <input class="filter-style" type="checkbox">
-                              <span class="aside-filter__content-text">
+                              <span class="btn-checked__text">
                                 HIT
                               </span>
                             </label>
                           </div>
+
                           <div class="aside-filter__content-box">
                             <label class='aside-filter__content-label'>
                               <input class="filter-style" type="checkbox">
-                              <span class="aside-filter__content-text">
+                              <span class="btn-checked__text">
                                 ДИЛЕР
                               </span>
                             </label>
                           </div>
-
                         </div>
-                        <a class="aside-filter__link" href="#">Показать еще</a>
 
                       </li>
-
-
-
-
-
                       <!-- /.aside-filter__item -->
+
                       <li class="aside-filter__item-drop">
                         <p class="aside-filter__item-title aside-filter__drop aside-filter__drop-active ">Страны</p>
                         <div class="aside-filter__content">
@@ -351,10 +346,42 @@
                               CША
                             </label>
                           </div>
+                          <a class="aside-filter__link" href="#">Показать еще</a>
                         </div>
-                        <a class="aside-filter__link" href="#">Показать еще</a>
                       </li>
                       <!-- /.aside-filter__item -->
+
+                      <li class="aside-filter__item-drop filter">
+                        <button class="filter-btn__send " type="submit">ВЫБРАТЬ</button>
+                        <p class="filter__extra">Дополнительные параметры
+                          <svg class="icon icon-btn__send">
+                            <use href="img/icons/icons.svg#arrow-top"></use>
+                          </svg>
+
+                        </p>
+                        <div class="filter__extra-content">
+                          <ul class="filter__extra-list">
+                            <li class="filter__extra-item">
+                              <a href="#" class="filter__extra-link">--more--</a>
+                            </li>
+                            <li class="filter__extra-item">
+                              <a href="#" class="filter__extra-link">--more--</a>
+                            </li>
+                            <li class="filter__extra-item">
+                              <a href="#" class="filter__extra-link">--more--</a>
+                            </li>
+                            <li class="filter__extra-item">
+                              <a href="#" class="filter__extra-link">--more--</a>
+                            </li>
+                            <li class="filter__extra-item">
+                              <a href="#" class="filter__extra-link">--more--</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <button class="filter-btn__reset" type="submit">Сбросить фильтр</button>
+                      </li>
+
                     </ul>
                   </form>
                 </div>
