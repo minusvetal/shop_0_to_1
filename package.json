@@ -39,6 +39,7 @@
 		"webp-converter": "^2.2.3"
 	},
 	"dependencies": {
-		"gulp-cli": "^2.3.0"
+		"gulp-cli": "^2.3.0",
+		"rateyo": "^3.0.0-alpha.2"
 	}
 }
