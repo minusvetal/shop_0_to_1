@@ -136,7 +136,6 @@ $(function () {
  
   $(".goods__rating").rateYo({
     starWidth: "23px",
-    rating    : 2.6,
     spacing   : "5px",
     normalFill: "#C4C4C4",
     multiColor: {
