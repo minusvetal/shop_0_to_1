@@ -3,6 +3,8 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		@include adaptiv-value("padding-bottom", 40, 30, 0);
+		@include adaptiv-value("min-height", 650, 450, 0);
 	}
 	// __image - start
 	&__image {
@@ -66,12 +68,13 @@
 		font-size: 15px;
 		line-height: 18px;
 		color: $accent;
-		margin-top: auto;
 	}
 
 	// __content - start
 	&__content {
 		flex: 0 0 50%;
+		@include adaptiv-value("max-height", 610, 450, 0);
+		overflow: auto;
 	}
 	&-title {
 		font-weight: bold;
@@ -122,6 +125,7 @@
 			border-bottom: 2px solid $accent;
 		}
 	}
+
 	&__tab-item {
 		display: flex;
 		max-width: 436px;

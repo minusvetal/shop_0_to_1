@@ -116,7 +116,6 @@
 		line-height: 24px;
 		text-transform: capitalize;
 		color: $dark;
-
 		@include adaptiv-value("padding-top", 12, 2, 0);
 		@include adaptiv-value("padding-bottom", 12, 2, 0);
 		&::before {

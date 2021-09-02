@@ -77,7 +77,7 @@ function css() {
 			autoprefixer({
 				overrideBrowserList: ["last 5 versions"],
 				cascade: true,
-			}),
+			})
 		)
 		.pipe(webpCSS({ webpClass: ".webp", noWebpClass: ".no-webp" }))
 		.pipe(dest(path.build.css))
@@ -85,7 +85,7 @@ function css() {
 		.pipe(
 			rename({
 				extname: ".min.css",
-			}),
+			})
 		)
 		.pipe(dest(path.build.css))
 		.pipe(browsersync.stream());
@@ -99,12 +99,12 @@ function js() {
 		.pipe(
 			rename({
 				extname: ".min.js",
-			}),
+			})
 		)
 		.pipe(
 			babel({
 				presets: ["@babel/env"],
-			}),
+			})
 		)
 		.pipe(dest(path.build.js))
 		.pipe(browsersync.stream());
@@ -115,7 +115,7 @@ function images() {
 		.pipe(
 			webp({
 				quality: 70,
-			}),
+			})
 		)
 		.pipe(dest(path.build.img))
 		.pipe(src(path.src.img))
@@ -125,7 +125,7 @@ function images() {
 				progressive: true,
 				optimizationLevel: 3,
 				svgoPlugins: [{ removeViewBox: false }],
-			}),
+			})
 		)
 		.pipe(dest(path.build.img))
 		.pipe(browsersync.stream());
@@ -142,7 +142,7 @@ gulp.task("otf2ttf", function () {
 		.pipe(
 			fonter({
 				formats: ["ttf"],
-			}),
+			})
 		)
 
 		.pipe(dest(sourсe_folder + "/fonts/"));
@@ -156,7 +156,7 @@ gulp.task("svgSprite", function () {
 				js2svg: {
 					pretty: true,
 				},
-			}),
+			})
 		)
 		.pipe(
 			cheerio({
@@ -166,7 +166,7 @@ gulp.task("svgSprite", function () {
 					$("[style]").removeAttr("style");
 				},
 				parserOptions: { xmlMode: true },
-			}),
+			})
 		)
 		.pipe(replace("&gt;", ">"))
 		.pipe(
@@ -177,7 +177,7 @@ gulp.task("svgSprite", function () {
 						// example: true,
 					},
 				},
-			}),
+			})
 		)
 		.pipe(dest(path.build.img));
 });
@@ -195,8 +195,12 @@ function fontsStyle(params) {
 					if (c_fontname != fontname) {
 						fs.appendFile(
 							sourсe_folder + "/scss/fonts.scss",
-							'@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n',
-							cb,
+							'@include font("' +
+								fontname +
+								'", "' +
+								fontname +
+								'", "400", "normal");\r\n',
+							cb
 						);
 					}
 					c_fontname = fontname;
@@ -219,7 +223,11 @@ function clean(params) {
 	return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts), fontsStyle);
+let build = gulp.series(
+	clean,
+	gulp.parallel(html, css, js, images, fonts),
+	fontsStyle
+);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontsStyle = fontsStyle;

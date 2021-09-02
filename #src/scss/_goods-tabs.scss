@@ -1,0 +1,105 @@
+.goods-tabs {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 100px;
+	background-color: #fff;
+
+	&__items {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #f0f0f4;
+	}
+	&__item {
+		position: relative;
+		font-size: 20px;
+		line-height: 24px;
+		color: $dark;
+		padding: 24px 0;
+		opacity: 0.4;
+		&.tab--active {
+			font-weight: 500;
+			opacity: 1;
+			&::before {
+				content: "";
+				position: absolute;
+				height: 2px;
+				left: 0;
+				width: 120%;
+				bottom: 25%;
+				background-color: $accent;
+			}
+		}
+		&:hover {
+			&::before {
+				content: "";
+				position: absolute;
+				height: 2px;
+				left: 0;
+				width: 120%;
+				bottom: 25%;
+				background-color: $accent;
+			}
+		}
+	}
+	.goods-form {
+		&__top {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 50px;
+		}
+
+		&__input-search {
+			position: relative;
+			width: 313px;
+			height: 33px;
+			padding: 10px;
+			background: #f0f0f4;
+			border-radius: 3px;
+		}
+		&__text {
+			display: inline-block;
+			margin-left: 15px;
+		}
+	}
+	.goods-list {
+		&__item {
+			display: flex;
+			justify-content: space-between;
+			font-size: 16px;
+			line-height: 19px;
+			color: $dark;
+			margin: 20px 0;
+		}
+		&__adress,
+		&__workhours,
+		&__avialable,
+		&__num,
+		&__btn {
+			flex: 0 0 20%;
+			color: $dark;
+			opacity: 0.7;
+		}
+
+		&__workhours-time {
+			display: inline-block;
+			width: 40%;
+			font-size: 16px;
+			line-height: 19px;
+			color: $dark;
+			opacity: 0.7;
+			padding-bottom: 9px;
+		}
+		&__title {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+			color: $dark;
+			opacity: 1;
+		}
+	}
+}
+
+hr {
+	border-top: 1px solid $light-gray;
+}
