@@ -19,16 +19,20 @@
 	}
 	.product-content {
 		display: none;
+		height: 0;
+		overflow: hidden;
 	}
 
 	.product-content--active {
 		display: block;
+		height: auto;
 	}
 	&__more {
 		text-align: center;
 		margin: 30px 0;
 	}
 	&__more-link {
+		display: inline-block;
 		min-width: 252px;
 		font-size: 15px;
 		line-height: 18px;
@@ -36,9 +40,16 @@
 		letter-spacing: 0.12em;
 		text-transform: uppercase;
 		color: $dark;
+		background-color: $light-gray;
 		padding: 16px 43px;
-		background-color: #f0f0f4;
 		margin: 0 auto;
+		transition: all 0.3s ease-in;
+
+		&:hover {
+			color: $white;
+			background-color: $accent;
+			transition: all 0.3s ease-in;
+		}
 	}
 }
 

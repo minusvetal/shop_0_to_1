@@ -1,14 +1,18 @@
 .goods-tabs {
 	padding-top: 40px;
-	padding-bottom: 40px;
-	margin-bottom: 100px;
-	background-color: #fff;
+	background-color: $white;
 
+	.products-slider__item {
+		padding-left: 0;
+	}
+	&__wrapper {
+		padding-bottom: 100px;
+	}
 	&__items {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		background-color: #f0f0f4;
+		background-color: $light-gray;
 	}
 	&__item {
 		position: relative;
@@ -25,7 +29,7 @@
 				position: absolute;
 				height: 2px;
 				left: 0;
-				width: 120%;
+				width: 110%;
 				bottom: 25%;
 				background-color: $accent;
 			}
@@ -36,7 +40,7 @@
 				position: absolute;
 				height: 2px;
 				left: 0;
-				width: 120%;
+				width: 110%;
 				bottom: 25%;
 				background-color: $accent;
 			}
@@ -45,21 +49,29 @@
 	.goods-form {
 		&__top {
 			display: flex;
-			justify-content: space-between;
-			margin-top: 50px;
+			align-items: center;
+			margin: 50px 0;
 		}
 
 		&__input-search {
 			position: relative;
 			width: 313px;
-			height: 33px;
-			padding: 10px;
-			background: #f0f0f4;
+			margin-left: 20px;
+			margin-right: 100px;
+			padding: 9px 37px 9px 17px;
+			background: $light-gray;
 			border-radius: 3px;
 		}
 		&__text {
-			display: inline-block;
-			margin-left: 15px;
+			font-size: 17px;
+			line-height: 20px;
+			color: rgb(47 48 53 / 70%);
+		}
+		&__top-radio {
+			font-size: 17px;
+			line-height: 20px;
+			margin-left: 54px;
+			cursor: pointer;
 		}
 	}
 	.goods-list {
@@ -67,9 +79,10 @@
 			display: flex;
 			justify-content: space-between;
 			font-size: 16px;
-			line-height: 19px;
+			line-height: 22px;
 			color: $dark;
-			margin: 20px 0;
+			padding: 12px 0;
+			border-bottom: 1px solid $light-gray;
 		}
 		&__adress,
 		&__workhours,
@@ -77,17 +90,18 @@
 		&__num,
 		&__btn {
 			flex: 0 0 20%;
-			color: $dark;
-			opacity: 0.7;
+			color: rgb(47 48 53 / 70%);
 		}
-
+		&__adress {
+			max-width: 210px;
+			margin-right: 80px;
+		}
 		&__workhours-time {
 			display: inline-block;
 			width: 40%;
 			font-size: 16px;
 			line-height: 19px;
-			color: $dark;
-			opacity: 0.7;
+			color: rgb(47 48 53 / 70%);
 			padding-bottom: 9px;
 		}
 		&__title {
@@ -95,11 +109,18 @@
 			font-size: 20px;
 			line-height: 24px;
 			color: $dark;
-			opacity: 1;
+			border: none;
+		}
+
+		&__button {
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: 0.12em;
+			color: $white;
+			text-transform: uppercase;
+			padding: 10px 40px;
+			background: $accent;
+			border-radius: 3px;
 		}
 	}
-}
-
-hr {
-	border-top: 1px solid $light-gray;
 }

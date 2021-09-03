@@ -6,6 +6,11 @@
 		@include adaptiv-value("padding-bottom", 40, 30, 0);
 		@include adaptiv-value("min-height", 650, 450, 0);
 	}
+
+	.products-slider__item {
+		padding-left: 0;
+	}
+
 	// __image - start
 	&__image {
 		display: flex;

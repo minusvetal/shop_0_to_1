@@ -39,15 +39,18 @@ $(document).ready(function(){
   });
 });
 
-
+// slick
 $(document).ready(function(){
   $('.products-slider').slick({
+    slickSetOption:true,
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '<button class="products-slider__btn products-slider__btnprev"><svg class="icon icon-black-arrow"><use href="img/icons/icons.svg#arrow-black-left"></use></svg></button>',
     nextArrow: '<button class="products-slider__btn products-slider__btnnext"><svg class="icon icon-black-arrow"><use href="img/icons/icons.svg#arrow-black-right"></use></svg></button>',
   });
 });
+
+
 
 $('.tab').on('click', function (e) {
   e.preventDefault();
@@ -57,7 +60,10 @@ $('.tab').on('click', function (e) {
 
   $(this).addClass('tab--active');
   $($(this).attr('href')).addClass('tabs-content--active');
+  // $('.products-slider').slick('refresh');
+
 })
+
 
 $('.products-item__favorite').on('click', function (e) {
   e.preventDefault();

@@ -4,7 +4,6 @@
 
       <div class="tabs-wrapper goods-tabs__wrapper">
 
-
         <div class="tabs goods-tabs__items">
           <a class="tab goods-tabs__item " href="#goods-tab-1">О товаре</a>
           <a class="tab goods-tabs__item" href="#goods-tab-2">Характеристики</a>
@@ -16,7 +15,6 @@
         </div>
 
 
-
         <div class="tabs-container goods-tabs__container">
           <div class="tabs-content goods-tabs__content " id="goods-tab-1">1
           </div>
@@ -26,21 +24,22 @@
           </div>
           <div class="tabs-content tabs-content--active goods-tabs__content " id="goods-tab-4">
 
+
             <form class="goods-form" action="#">
 
               <div class="goods-form__top">
-                <label class="goods-form__label-search">
+                <label class="goods-form__top-search">
                   <span class="goods-form__text">
                     Магазин
                   </span>
                   <input class="goods-form__input-search" type="text">
                 </label>
-                <label class="goods-form__label-radio">
-                  <input class="goods-form__radio" type="radio" name="goods__radio">
+                <label class="goods-form__top-radio">
+                  <input class="goods-form__radio filter-style" type="radio" name="goods__radio">
                   <span class="goods-form__text">Забрать сегодня</span>
                 </label>
-                <label class="goods-form__label-radio">
-                  <input class="goods-form__radio" type="radio" name="goods__radio" checked>
+                <label class="goods-form__top-radio">
+                  <input class="goods-form__radio filter-style" type="radio" name="goods__radio" checked>
                   <span class="goods-form__text">Забрать в течение недели</span>
                 </label>
               </div>
@@ -49,12 +48,12 @@
               <div class="goods-form__bottom">
 
                 <ul class="goods-form__list goods-list">
-                  <li class="goods-list__item">
-                    <div class="goods-list__title goods-list__adress">Адрес</div>
-                    <div class="goods-list__title goods-list__workhours">Режим работы</div>
-                    <div class="goods-list__title goods-list__avialable">Доступно</div>
-                    <div class="goods-list__title goods-list__num">Количество</div>
-                    <div class="goods-list__title goods-list__btn"></div>
+                  <li class="goods-list__item goods-list__title">
+                    <div class="goods-list__adress">Адрес</div>
+                    <div class="goods-list__workhours">Режим работы</div>
+                    <div class="goods-list__avialable">Доступно</div>
+                    <div class="goods-list__num">Количество</div>
+                    <div class="goods-list__btn"></div>
 
                   </li>
 
@@ -73,9 +72,12 @@
                     </div>
                     <div class="goods-list__avialable">В наличии</div>
                     <div class="goods-list__num">1</div>
-                    <div class="goods-list__btn">КУПИТЬ</div>
+                    <div class="goods-list__btn">
+                      <button class="goods-list__button">Купить</button>
+
+                    </div>
                   </li>
-                  <hr>
+
                   <li class="goods-list__item">
                     <div class="goods-list__adress">Москва, ул. Южная 134</div>
                     <div class="goods-list__workhours">
@@ -90,9 +92,12 @@
                     </div>
                     <div class="goods-list__avialable">В наличии</div>
                     <div class="goods-list__num">2</div>
-                    <div class="goods-list__btn">КУПИТЬ</div>
+                    <div class="goods-list__btn">
+                      <button class="goods-list__button">Купить</button>
+
+                    </div>
                   </li>
-                  <hr>
+
                   <li class="goods-list__item">
                     <div class="goods-list__adress">Санкт-Петербург,
                       ул. Красная 19</div>
@@ -108,9 +113,12 @@
                     </div>
                     <div class="goods-list__avialable">В наличии</div>
                     <div class="goods-list__num">0</div>
-                    <div class="goods-list__btn">КУПИТЬ</div>
+                    <div class="goods-list__btn">
+                      <button class="goods-list__button">Купить</button>
+
+                    </div>
                   </li>
-                  <hr>
+
 
                   <li class="goods-list__item">
                     <div class="goods-list__adress">Киев, ул Шевченко 167</div>
@@ -126,11 +134,11 @@
                     </div>
                     <div class="goods-list__avialable">В наличии</div>
                     <div class="goods-list__num">0</div>
-                    <div class="goods-list__btn">КУПИТЬ</div>
+                    <div class="goods-list__btn">
+                      <button class="goods-list__button">Купить</button>
+
+                    </div>
                   </li>
-                  <hr>
-
-
 
                 </ul>
               </div>
@@ -146,7 +154,8 @@
           </div>
         </div>
 
-
-
       </div>
     </div>
+  </div>
+</div>
+@@include('_products-popular.html')

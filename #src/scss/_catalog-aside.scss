@@ -240,7 +240,7 @@
 	.jq-checkbox {
 		width: 60px;
 		height: 25px;
-		background: #f0f0f4;
+		background: $light-gray;
 		border: none;
 		&.checked {
 			background-color: $accent;
@@ -259,7 +259,7 @@
 	&-btn {
 		&__send {
 			padding: 17px 85px;
-			background: #f0f0f4;
+			background: $light-gray;
 			font-size: 15px;
 			line-height: 18px;
 			text-align: center;
@@ -287,7 +287,7 @@
 	&__extra {
 		font-size: 13px;
 		line-height: 16px;
-		color: #2f3035;
+		color: $dark;
 		cursor: pointer;
 		.icon-btn__send {
 			width: 12px;
@@ -304,7 +304,7 @@
 			display: inline-block;
 			font-size: 13px;
 			line-height: 16px;
-			color: #2f3035;
+			color: $dark;
 			padding: 5px 5px;
 		}
 	}

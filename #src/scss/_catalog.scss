@@ -105,7 +105,7 @@
 	padding: 8px 20px;
 	font-size: 14px;
 	line-height: 17px;
-	color: #2f3035;
+	color: $dark;
 	background: transparent;
 	box-shadow: none;
 	text-shadow: none;
@@ -159,7 +159,7 @@
 	font-family: "Barlow";
 	font-size: 14px;
 	line-height: 17px;
-	color: #2f3035;
+	color: $dark;
 	&__text {
 		display: inline-block;
 		font-size: 14px;
