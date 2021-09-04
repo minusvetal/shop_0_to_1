@@ -1,10 +1,15 @@
 .banner-slider {
 	position: relative;
 	overflow: hidden;
-	@include adaptiv-value("width", 870, 500, 0);
-	@include adaptiv-value("hight", 400, 250, 0);
+	@include adaptiv-value("max-width", 840, 650, 0);
+	// @include adaptiv-value("height", 400, 350, 0);
+
 	&__img {
+		width: 100%;
 		object-fit: contain;
+	}
+	&__item {
+		width: 100%;
 	}
 	&__btn {
 		position: absolute;
@@ -27,7 +32,7 @@
 	}
 	.slick-dots {
 		position: absolute;
-		bottom: 40px;
+		@include adaptiv-value("bottom", 40, 10, 0);
 		left: 0;
 		right: 0;
 		text-align: center;

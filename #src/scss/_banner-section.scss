@@ -9,7 +9,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	max-width: 265px;
+	@include adaptiv-value("width", 265, 150, 0);
 	text-align: center;
 	border: 1px solid #cdcdcd;
 	border-radius: 3px;
@@ -25,7 +25,7 @@
 	&__text {
 		font-family: "ProximaNova";
 		text-transform: uppercase;
-		font-size: 12px;
+		@include adaptiv-font(12, 8);
 		letter-spacing: 1.2px;
 		color: $white;
 		background-color: $accent;
@@ -44,7 +44,7 @@
 		}
 		&-new {
 			font-weight: 700;
-			font-size: 27px;
+			@include adaptiv-font(27, 16);
 			line-height: 32px;
 			color: $accent;
 			margin-right: 6px;
@@ -58,7 +58,7 @@
 		&-old {
 			position: relative;
 			font-weight: 400;
-			font-size: 14px;
+			@include adaptiv-font(14, 10);
 			line-height: 17px;
 			margin-right: 6px;
 			color: #c4c4c4;
@@ -83,11 +83,11 @@
 	&__img {
 		object-fit: contain;
 		margin: 0 auto;
-		max-width: 125px;
-		max-height: 176px;
+		@include adaptiv-value("width", 125, 90, 0);
+		@include adaptiv-value("height", 176, 120, 0);
 	}
 	&__title {
-		margin-bottom: 7px;
+		@include adaptiv-value("margin-bottom", 7, 2, 0);
 	}
 
 	&__footer {
@@ -110,8 +110,22 @@
 			font-weight: bold;
 			font-size: 18px;
 			line-height: 22px;
-
 			color: $accent;
 		}
 	}
+}
+
+@media (max-width: 968px) {
+	.banner-section {
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+	.banner-slider {
+		max-width: 100%;
+	}
+}
+@media (max-width: 680px) {
 }

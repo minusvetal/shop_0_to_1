@@ -139,20 +139,22 @@ $inputTo.on("input", function () {
 //  rateyo
 
 $(function () {
- 
   $(".goods__rating").rateYo({
     starWidth: "23px",
     spacing   : "5px",
     normalFill: "#C4C4C4",
     multiColor: {
- 
       "startColor": "#508be4", //ligth
       "endColor"  : "#1C62CD"  //blue
     },
   });
- 
 });
 
+$('.menu__btn').on('click', function (e) {
+  e.preventDefault();
+  $('.mobile-menu').toggleClass('mobile-menu--active')
+  
+})
 
 
 
