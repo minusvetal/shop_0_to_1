@@ -14,8 +14,8 @@ html {
 	margin: 0 auto;
 }
 .icon {
-	width: 20px;
-	height: 20px;
+	@include adaptiv-value("width", 20, 10, 0);
+	@include adaptiv-value("height", 20, 10, 0);
 	fill: #000;
 	&:hover {
 		fill: $accent;
