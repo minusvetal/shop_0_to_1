@@ -52,10 +52,22 @@
 			align-items: center;
 			margin: 50px 0;
 		}
-
-		&__input-search {
+		&__top-search {
 			position: relative;
+		}
+		.icon-search {
+			position: absolute;
+			right: 22%;
+			top: 32%;
+			width: 16px;
+			height: 16px;
+			fill: $gray;
+		}
+		&__input-search {
 			width: 313px;
+			font-size: 17px;
+			line-height: 20px;
+			color: rgb(47 48 53 / 70%);
 			margin-left: 20px;
 			margin-right: 100px;
 			padding: 9px 37px 9px 17px;
@@ -73,54 +85,70 @@
 			margin-left: 54px;
 			cursor: pointer;
 		}
-	}
-	.goods-list {
-		&__item {
-			display: flex;
-			justify-content: space-between;
-			font-size: 16px;
-			line-height: 22px;
-			color: $dark;
-			padding: 12px 0;
-			border-bottom: 1px solid $light-gray;
-		}
-		&__adress,
-		&__workhours,
-		&__avialable,
-		&__num,
-		&__btn {
-			flex: 0 0 20%;
-			color: rgb(47 48 53 / 70%);
-		}
-		&__adress {
-			max-width: 210px;
-			margin-right: 80px;
-		}
-		&__workhours-time {
-			display: inline-block;
-			width: 40%;
-			font-size: 16px;
-			line-height: 19px;
-			color: rgb(47 48 53 / 70%);
-			padding-bottom: 9px;
-		}
-		&__title {
-			font-weight: 600;
-			font-size: 20px;
-			line-height: 24px;
-			color: $dark;
+		.jq-radio.checked .jq-radio__div {
+			width: 14px;
+			height: 14px;
+			margin: 0;
+			border-radius: 0;
 			border: none;
+			background-image: url(../img/check-blue.svg);
+			background-repeat: no-repeat;
+			background-color: transparent;
+			transform: rotate(0);
+			box-shadow: none;
 		}
+		.jq-checkbox.checked,
+		.jq-radio.checked {
+			background: 0 0;
+		}
+		.goods-list {
+			&__item {
+				display: flex;
+				justify-content: space-between;
+				font-size: 16px;
+				line-height: 22px;
+				color: $dark;
+				padding: 12px 0;
+				border-bottom: 1px solid $light-gray;
+			}
+			&__adress,
+			&__workhours,
+			&__avialable,
+			&__num,
+			&__btn {
+				flex: 0 0 20%;
+				color: rgb(47 48 53 / 70%);
+			}
+			&__adress {
+				max-width: 210px;
+				margin-right: 80px;
+			}
+			&__workhours-time {
+				display: inline-block;
+				width: 40%;
+				font-size: 16px;
+				line-height: 19px;
+				color: rgb(47 48 53 / 70%);
+				padding-bottom: 9px;
+			}
+			&__title {
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 24px;
+				color: $dark;
+				border: none;
+			}
 
-		&__button {
-			font-size: 14px;
-			line-height: 17px;
-			letter-spacing: 0.12em;
-			color: $white;
-			text-transform: uppercase;
-			padding: 10px 40px;
-			background: $accent;
-			border-radius: 3px;
+			&__button {
+				font-size: 14px;
+				line-height: 17px;
+				letter-spacing: 0.12em;
+				color: $white;
+				text-transform: uppercase;
+				padding: 10px 40px;
+				background: $accent;
+				border-radius: 3px;
+			}
 		}
 	}
 }

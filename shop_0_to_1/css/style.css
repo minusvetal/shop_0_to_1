@@ -3401,9 +3401,24 @@ input[type=submit].styler[disabled] {
   margin: 50px 0;
 }
 
-.goods-tabs .goods-form__input-search {
+.goods-tabs .goods-form__top-search {
   position: relative;
+}
+
+.goods-tabs .goods-form .icon-search {
+  position: absolute;
+  right: 22%;
+  top: 32%;
+  width: 16px;
+  height: 16px;
+  fill: #c4c4c4;
+}
+
+.goods-tabs .goods-form__input-search {
   width: 313px;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(47, 48, 53, 0.7);
   margin-left: 20px;
   margin-right: 100px;
   padding: 9px 37px 9px 17px;
@@ -3424,7 +3439,25 @@ input[type=submit].styler[disabled] {
   cursor: pointer;
 }
 
-.goods-tabs .goods-list__item {
+.goods-tabs .goods-form .jq-radio.checked .jq-radio__div {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  background-image: url(../img/check-blue.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: rotate(0);
+  box-shadow: none;
+}
+
+.goods-tabs .goods-form .jq-checkbox.checked,
+.goods-tabs .goods-form .jq-radio.checked {
+  background: 0 0;
+}
+
+.goods-tabs .goods-form .goods-list__item {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -3434,21 +3467,21 @@ input[type=submit].styler[disabled] {
   border-bottom: 1px solid #f0f0f4;
 }
 
-.goods-tabs .goods-list__adress,
-.goods-tabs .goods-list__workhours,
-.goods-tabs .goods-list__avialable,
-.goods-tabs .goods-list__num,
-.goods-tabs .goods-list__btn {
+.goods-tabs .goods-form .goods-list__adress,
+.goods-tabs .goods-form .goods-list__workhours,
+.goods-tabs .goods-form .goods-list__avialable,
+.goods-tabs .goods-form .goods-list__num,
+.goods-tabs .goods-form .goods-list__btn {
   flex: 0 0 20%;
   color: rgba(47, 48, 53, 0.7);
 }
 
-.goods-tabs .goods-list__adress {
+.goods-tabs .goods-form .goods-list__adress {
   max-width: 210px;
   margin-right: 80px;
 }
 
-.goods-tabs .goods-list__workhours-time {
+.goods-tabs .goods-form .goods-list__workhours-time {
   display: inline-block;
   width: 40%;
   font-size: 16px;
@@ -3457,7 +3490,7 @@ input[type=submit].styler[disabled] {
   padding-bottom: 9px;
 }
 
-.goods-tabs .goods-list__title {
+.goods-tabs .goods-form .goods-list__title {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -3465,7 +3498,7 @@ input[type=submit].styler[disabled] {
   border: none;
 }
 
-.goods-tabs .goods-list__button {
+.goods-tabs .goods-form .goods-list__button {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.12em;
@@ -3549,7 +3582,7 @@ input[type=submit].styler[disabled] {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
-  padding: 8px 14px;
+  padding: 8px 10px;
 }
 
 .social-list {
