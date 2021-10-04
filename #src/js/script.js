@@ -1,10 +1,9 @@
 // @ts-nocheck
-@@include('webp.js')
-@@include('slick.min.js')
-@@include('jquery.formstyler.min.js')
-@@include('ion.rangeSlider.min.js')
-@@include('jquery.rateyo.min.js')
-
+@include ('webp.js')
+@include ('slick.min.js')
+@include ('jquery.formstyler.min.js')
+@include ('ion.rangeSlider.min.js')
+@include ('jquery.rateyo.min.js')
 
 
 $(document).ready(function(){
